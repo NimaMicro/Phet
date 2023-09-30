@@ -96917,5 +96917,24 @@
       data-cf-beacon='{"rayId":"80063a2a4c3e196d","token":"57ed97624d4c401fb934c2dd728ace72","version":"2023.8.0","si":100}'
       crossorigin="anonymous"
     ></script>
+    <script>
+      setTimeout(() => {
+        var parent = document.getElementById("sim").childNodes;
+        parent[2].setAttribute("id", "step1");
+        const parent1 = document.getElementById("step1").childNodes;
+        parent1[1].setAttribute("id", "step2");
+        const parent2 = document.getElementById("step2").childNodes;
+        parent2[0].setAttribute("id", "step3");
+        const parent3 = document.getElementById("step3").childNodes;
+        parent3[0].setAttribute("id", "step4");
+        const parent4 = document.getElementById("step4").childNodes;
+        parent4[1].setAttribute("id", "step5");
+        const parent5 = document.getElementById("step5").childNodes;
+        parent5[1].setAttribute("style", "display:none");
+        // //in the load page
+        const parent01 = document.getElementById("step3").childNodes;
+        parent01[1].setAttribute("style", "display:none");
+      }, 1500);
+    </script>
   </body>
 </html>
