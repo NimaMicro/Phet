@@ -79229,5 +79229,39 @@
       data-cf-beacon='{"rayId":"8014a134b87b3644","token":"57ed97624d4c401fb934c2dd728ace72","version":"2023.8.0","si":100}'
       crossorigin="anonymous"
     ></script>
+    <script>
+      setTimeout(() => {
+        var parent = document.getElementById("sim").childNodes;
+        parent[2].setAttribute("id", "step1");
+        const parent1 = document.getElementById("step1").childNodes;
+        parent1[1].setAttribute("id", "step2");
+        const parent2 = document.getElementById("step2").childNodes;
+        parent2[0].setAttribute("id", "step3");
+        const parent3 = document.getElementById("step3").childNodes;
+        parent3[0].setAttribute("id", "step4");
+        const parent4 = document.getElementById("step4").childNodes;
+        parent4[1].setAttribute("id", "step5");
+        const parent5 = document.getElementById("step5").childNodes;
+        parent5[1].setAttribute("id", "step6");
+        const parent6 = document.getElementById("step6").childNodes;
+         parent6[0].setAttribute("style", "display:none");
+        // //in the load page
+        const parent01 = document.getElementById("step3").childNodes;
+        parent01[1].setAttribute("style", "display:none");
+
+        var parent001 = document.getElementById("sim").childNodes;
+        parent001[1].setAttribute("id", "step01");
+        const parent02 = document.getElementById("step01").childNodes;
+        parent02[0].setAttribute("id", "step02");
+        const parent03 = document.getElementById("step02").childNodes;
+        parent03[1].setAttribute("id", "step03");
+        const parent04 = document.getElementById("step03").childNodes;
+        parent04[0].setAttribute("id", "step04");
+        const parent05 = document.getElementById("step04").childNodes;
+        parent05[0].setAttribute("id", "step05");
+        const parent06 = document.getElementById("step05").childNodes;
+        parent06[2].setAttribute("style", "display:none");
+      }, 1500);
+    </script>
   </body>
 </html>
